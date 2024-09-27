@@ -1,0 +1,179 @@
+/* House Colors */
+.house-card .card-header.ruby {
+    background-color: #FF0000;
+    color: #fff;
+}
+.house-card .card-header.emerald {
+    background-color: #50C878;
+    color: #fff;
+}
+.house-card .card-header.sapphire {
+    background-color: #0F52BA;
+    color: #fff;
+}
+.house-card .card-header.topaz {
+    background-color: #FFC87C;
+    color: #fff;
+}
+
+/* Dark and Light Themes */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+/* Navbar Theming */
+.navbar.light-mode {
+    background-color: #f8f9fa !important;
+}
+
+.navbar.dark-mode {
+    background-color: #343a40 !important;
+}
+
+.navbar.light-mode .navbar-brand,
+.navbar.light-mode .nav-link {
+    color: #212529 !important;
+}
+
+.navbar.dark-mode .navbar-brand,
+.navbar.dark-mode .nav-link {
+    color: #f8f9fa !important;
+}
+
+/* Card Backgrounds */
+.card {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* Input Boxes and Forms */
+.form-control {
+    background-color: #fff;
+    color: #212529;
+}
+
+body.dark-mode .form-control {
+    background-color: #495057;
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #adb5bd;
+}
+
+/* Buttons */
+.btn-outline-primary.active, .btn-outline-danger.active {
+    background-color: currentColor;
+    color: #fff;
+}
+
+.btn-outline-primary, .btn-outline-danger {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover, .btn-outline-danger:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+/* House Selection Grid */
+.house-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.house-option {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.house-option input[type="radio"] {
+    display: none;
+}
+
+.house-label {
+    display: block;
+    font-weight: bold;
+}
+
+.house-option.selected {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-color: #007bff;
+}
+
+/* Responsive Grid for Mobile */
+@media (max-width: 576px) {
+    .house-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Add/Subtract Buttons */
+.btn-group-toggle .btn {
+    width: 100%;
+}
+
+.house-option.selected .house-label {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* Cards and Tables in Dark Mode */
+body.dark-mode .card {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode table {
+    color: #f8f9fa;
+}
+
+body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .table-bordered th, 
+body.dark-mode .table-bordered td {
+    border-color: #454d55;
+}
+
+/* Other Elements */
+.house-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.house-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* House Labels on Teacher Page */
+.house-label.ruby {
+    color: #FF0000;
+}
+
+.house-label.emerald {
+    color: #50C878;
+}
+
+.house-label.sapphire {
+    color: #0F52BA;
+}
+
+.house-label.topaz {
+    color: #FFC87C;
+}

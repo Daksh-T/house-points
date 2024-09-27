@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center mb-5">House Points</h1>
+<div class="row text-center">
+    {% for house, point in points.items() %}
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card house-card">
+                <div class="card-header {{ house }}">
+                    <h3>{{ house.capitalize() }}</h3>
+                </div>
+                <div class="card-body">
+                    <h4>{{ point }} Points</h4>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
